@@ -57,8 +57,8 @@ The first release intentionally keeps retrieval lightweight and dependable. It u
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/repo-seance.git
-cd repo-seance
+git clone https://github.com/AnuragkGithub/AI-S-ance.git
+cd AI-S-ance
 ```
 
 ### 2. Create a virtual environment
