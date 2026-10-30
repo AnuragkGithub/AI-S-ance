@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: repo-seance
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ROOT
+        value: /app
+      - key: DATA_DIR
+        value: /data
+      - key: OLLAMA_BASE_URL
+        sync: false
+      - key: OLLAMA_MODEL
+        value: qwen2.5-coder:7b
+      - key: MAX_UPLOAD_MB
+        value: "50"
+    disk:
+      name: repo-seance-data
+      mountPath: /data
+      sizeGB: 1
